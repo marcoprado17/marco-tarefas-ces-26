@@ -1,0 +1,11 @@
+html
+  body
+    h2 Usa-se um cookie para monitorar quantos GET requests foram realizados por esse cliente
+    p Foram feitos #{n_reqs} GET requests
+    h2 Adicionar nova frase
+    form(method='post')
+      input(type='text', name='text')
+      button(type='submit') Adicionar frase ao mural
+    hr
+    h2 Frases do mural
+    pre#mural #{all_texts}

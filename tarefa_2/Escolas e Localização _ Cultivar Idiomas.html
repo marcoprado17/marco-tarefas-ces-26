@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://cultivaridiomas.com.br/escolas-e-localizacao -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+</style><link type="text/css" rel="stylesheet" href="./Escolas e Localização _ Cultivar Idiomas_files/css"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+</style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="./Escolas e Localização _ Cultivar Idiomas_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./Escolas e Localização _ Cultivar Idiomas_files/shared.css">	<link rel="stylesheet" href="./Escolas e Localização _ Cultivar Idiomas_files/escolas_e_localizacao.css">
+<title>Escolas e Localização | Cultivar Idiomas</title>
+<script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/map.js"></script><script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/util.js"></script><script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/marker.js"></script><style type="text/css">.gm-style {
+  font: 400 11px Roboto, Arial, sans-serif;
+  text-decoration: none;
+}
+.gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/onion.js"></script><script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/controls.js"></script><script type="text/javascript" charset="UTF-8" src="./Escolas e Localização _ Cultivar Idiomas_files/stats.js"></script></head>
+<body style="">
+	<header class="container flex-wrap">
+    <a href="http://cultivaridiomas.com.br/" class="no-underline-link">
+      <img src="./Escolas e Localização _ Cultivar Idiomas_files/cultivar_logo.png" alt="Logo da Cultivar Idiomas" class="logo">
+    </a>
+
+    <div class="header-title-box">
+      <a href="http://cultivaridiomas.com.br/" class="no-underline-link">
+       <img src="./Escolas e Localização _ Cultivar Idiomas_files/cultivar_fonte.png" alt="Título personalizado da Cultivar Idiomas" class="cultivar-fonte-img">
+       <h4 class="escola-de-idiomas-text">escola de idiomas</h4>
+     </a>
+   </div>
+ </header>  <nav class="navbar navbar-default">
+ <div class="navbar-header">
+  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+</div>
+<div class="container">
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav font-resizeable-nav-bar">
+      <li class="home-nav-btn"><a href="http://cultivaridiomas.com.br/"><i>Home</i></a></li>
+      <li class="quem-somos-nav-btn"><a href="http://cultivaridiomas.com.br/quem-somos"><i>Quem Somos</i></a></li>
+      <li class="cursos-nav-btn"><a href="http://cultivaridiomas.com.br/cursos"><i>Cursos</i></a></li>
+      <li class="depoimentos-nav-btn"><a href="http://cultivaridiomas.com.br/depoimentos"><i>Depoimentos</i></a></li>
+      <li class="escolas-e-localizacao-nav-btn active"><a href="http://cultivaridiomas.com.br/escolas-e-localizacao"><i>Escolas e Localização</i></a></li>
+      <li class="contato-nav-btn"><a href="http://cultivaridiomas.com.br/contato"><i>Contato</i></a></li>
+      <li class="teste-nav-btn dropdown">
+        <a href="http://cultivaridiomas.com.br/escolas-e-localizacao#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i>Teste de idiomas</i><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="http://cultivaridiomas.com.br/teste-ingles"><i>Inglês</i></a></li>
+          <li><a href="http://cultivaridiomas.com.br/teste-alemao"><i>Alemão</i></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<div class="container">
+  <h1>Site desenvolvido por mim em um projeto da ITA Junior</h1>
+  <h2>Geolocalização:</h2>
+  <p id="demo">Clique no botão para receber sua localização em Latitude e Longitude:</p>
+  <button onclick="getLocation()">Clique Aqui</button>
+  <h2>Video:</h2>
+  <video controls id="video1" width="420">
+    <source src="small.mp4" type="video/mp4">
+  </video>
+  <h2>Web Worker:</h2>
+  <p>*Em alguns navegadores, o worker não funciona em arquivo js local, deve-se usar um servidor: python -m SimpleHTTPServer 8000</p>
+  <h3 id="worker-text">O Web Worker altera a cor desse texto a cada 0.25s</h3>
+    <h3 class="unit-title">Unidade Guaratinguetá</h3>
+    <div class="row">
+     <div class="col-sm-8">
+      <div id="map"></div>
+    </div>
+
+    <div class="col-sm-4">
+
+      <div class="panel panel-default">
+       <div class="panel-heading">
+        <h3 class="panel-title"><i>Localização</i></h3>
+      </div>
+      <div class="panel-body">
+        Guaratinguetá - SP,<br>
+        Pedregulho | Av. João Pessoa,<br>
+        192 B Piso Superior,<br>
+        CEP 12515-010
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+     <div class="panel-heading">
+      <h3 class="panel-title"><i>Contato</i></h3>
+    </div>
+    <div class="panel-body">
+      Tel. 1: (12) 3122-2123<br>
+      Tel. 2: (12) 3125-1740<br>
+      Tel. 3: (12) 99185-1415 (Whatsapp)
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+  <hr>
+  <h3 class="unit-title">Unidade São José dos Campos</h3>
+  <div class="row">
+   <div class="col-sm-8">
+    <div id="map2"></div>
+  </div>
+
+  <div class="col-sm-4">
+
+    <div class="panel panel-default">
+     <div class="panel-heading">
+      <h3 class="panel-title"><i>Localização</i></h3>
+    </div>
+    <div class="panel-body">
+      São José dos Campos - SP,<br>
+      Jd. São Dimas,<br>
+      Rua Major Antônio Domingues, 457,<br>
+      CEP 12245-750
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+   <div class="panel-heading">
+    <h3 class="panel-title"><i>Contato</i></h3>
+  </div>
+  <div class="panel-body">
+    Tel. 1: (12) 99185-1415 (Whatsapp)<br>
+    Tel. 2: (12) 99108-5463 (Whatsapp)
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<footer class="page-footer">
+	<div class="container">
+		<div class="footer-social-networks-box">
+			<a href="https://www.facebook.com/cultivaridiomas/?fref=ts" class="no-underline-link">
+				<img src="./Escolas e Localização _ Cultivar Idiomas_files/facebook_icon.png" alt="Ícone do Facebook" class="social-network-icon-img">
+			</a>
+			<a href="https://plus.google.com/+CultivarEscoladeIdiomasGuaratinguet%C3%A1/posts" class="no-underline-link">
+				<img src="./Escolas e Localização _ Cultivar Idiomas_files/googleplus_icon.png" alt="Ícone do Google Plus" class="social-network-icon-img">
+			</a>
+		</div>
+
+		<hr class="footer-social-content-line">
+
+		<div class="row">
+			<div class="col-sm-4 footer-vcenter">
+				<div class="row">
+					<div class="col-md-6">
+						<p class="muted"><a href="http://cultivaridiomas.com.br/">Home</a></p>
+						<p class="muted"><a href="http://cultivaridiomas.com.br/quem-somos">Quem Somos</a></p>
+						<p class="muted"><a href="http://cultivaridiomas.com.br/cursos">Cursos</a></p>
+						<p class="muted"><a href="http://cultivaridiomas.com.br/depoimentos">Depoimentos</a></p>
+					</div>
+
+					<div class="col-md-6">
+						<p class="muted"><a href="http://cultivaridiomas.com.br/escolas-e-localizacao">Escolas e Localização</a></p>
+						<p class="muted"><a href="http://cultivaridiomas.com.br/contato">Contato</a></p>
+						<p class="muted"><a href="http://cultivaridiomas.com.br/teste-ingles">Teste seu Inglês</a></p>
+					</div>
+				</div>
+			</div><!--
+			Not delete this comment!!!. It's important because there should be no space between the divs.
+    --><div class="col-sm-4 footer-vcenter">
+    <div class="footer-tels-box">
+     <p>Tel. 1: (12) 3122-2123</p>
+     <p>Tel. 2: (12) 3125-1740</p>
+     <p>Tel. 3: (12) 99185-1415 (Whatsapp)</p>
+   </div>
+			</div><!--
+			Not delete this comment!!!. It's important because there should be no space between the divs.
+    --><div class="col-sm-4 footer-vcenter">
+    <div>
+     <ul>
+      <li>
+       <p>Unidade Guaratinguetá - SP<br>
+         Av. João Pessoa, 192 B Piso Superior, 12515-010<br>
+         <a target="_blank" href="https://www.google.com.br/maps/place/Av.+Jo%C3%A3o+Pessoa,+192+-+Vila+Paraiba,+Guaratinguet%C3%A1+-+SP,+12505-120/@-22.8098903,-45.1977861,17z/data=!3m1!4b1!4m5!3m4!1s0x94ccc45062ad136f:0x8fe6e38869562b4!8m2!3d-22.8098953!4d-45.1955974">veja no mapa</a>
+       </p>
+     </li>
+     <li>
+      <p>Unidade São José dos Campos - SP<br>
+        Rua Major Antônio Domingues, 457, 12245-750<br>
+        <a target="_blank" href="https://www.google.com.br/maps/place/R.+Maj.+Ant%C3%B4nio+Domingues,+457+-+Centro,+S%C3%A3o+Jos%C3%A9+dos+Campos+-+SP,+12245-750/@-23.1914663,-45.8925134,17z/data=!3m1!4b1!4m5!3m4!1s0x94cc4a139cd6a589:0x3a79494e08761304!8m2!3d-23.1914712!4d-45.8903247">veja no mapa</a>
+      </p>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+
+<hr class="footer-content-last-text-line">
+
+<div class="footer-last-text-box">
+  <p>Cultivar - Escola de Idiomas</p>
+</div>
+</div>
+</footer>  <script src="./Escolas e Localização _ Cultivar Idiomas_files/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="./Escolas e Localização _ Cultivar Idiomas_files/bootstrap.min.js"></script>	<script src="./Escolas e Localização _ Cultivar Idiomas_files/escolas_e_localizacao.js"></script>
+<script async="" defer="" src="./Escolas e Localização _ Cultivar Idiomas_files/js"></script>
+<script type="text/javascript">
+  var x=document.getElementById("demo");
+  function getLocation()
+    {
+      if (navigator.geolocation)
+        {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        }
+      else{x.innerHTML="O seu navegador não suporta Geolocalização.";}
+    }
+  function showPosition(position)
+    {
+      x.innerHTML="Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;  
+    }
+
+  var w;
+
+  if(typeof(Worker) !== "undefined") {
+    if(typeof(w) == "undefined") {
+      w = new Worker("my_worker.js");
+    }
+    w.onmessage = function(event) {
+      document.getElementById("worker-text").setAttribute("style", "color: " + event.data + ";");
+    };
+  } else {
+    document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+  }
+</script>
+</body></html>
